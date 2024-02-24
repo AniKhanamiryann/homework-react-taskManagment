@@ -36,3 +36,116 @@
     transform: rotate(360deg);
   }
 }
+
+
+.task-manager {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.column {
+  flex: 1;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.task-column {
+  margin-top: 10px;
+}
+
+.task {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task:hover {
+  background-color: #f0f0f0;
+}
+
+.task.done {
+  background-color: #d4edda;
+}
+
+.task.blocked {
+  background-color: #f8d7da;
+}
+
+.task h3 {
+  margin: 0;
+}
+
+.task p {
+  margin: 5px 0;
+}
+
+.task button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.task button:hover {
+  background-color: #c82333;
+}
+
+
+.add-task-form {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.add-task-form input[type="text"],
+.add-task-form input,
+.add-task-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.add-task-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.add-task-form button:hover {
+  background-color: #0056b3;
+}
+
+.add-task-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 8px;
+}
+
+.add-task-button:hover {
+  background-color: #218838;
+}
+
+.closebtn {
+  margin: 4px;
+}
